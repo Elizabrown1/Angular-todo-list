@@ -1,0 +1,51 @@
+<section class="row g-0 animate__animated animate__backInDown">
+    <div class="col-md-10 col-lg-6 col-xl-6 order-2 order-lg-1 vh-100 d-flex  align-items-center justify-content-end animate__animated animate__backInDown" style="background-color: #031956;">
+      
+      <div class="h-75 w-75 shadow rounded text-center text-white py-5" >
+        <div class="fw-bold h3" style="margin-top: 150px; ">To.doist</div>
+      </div>
+    </div>
+    <div class="col-md-10 col-lg-6 col-xl-6 order-1 order-lg-2  vh-100 text-white  d-flex align-items-center justify-content-start animate__animated animate__backInDown" style="background-color: #344FA1;">
+      <div class="h-75 w-75 sm-mt-5 shadow-lg rounded">
+        <div class="" style="padding: 100px; margin-top: 0px;">
+          <div class="col-lg-12 login-key">
+            <i class="fa fa-key" aria-hidden="true"></i>
+        </div>
+        <!-- <div class=" align-items-center">
+          <i class="fa fa-check fa-2x me-3" style="color: #5650F5;"></i>
+          <!-- <span class="h3 fw-bold ">Todo</span> -->
+        <!-- </div> -->
+
+        <h5 class="">Sign into your account</h5>
+        <p class="text-danger text-center">{{errorMsg}}</p>
+
+        <div class="form-outline mb-2">
+          <input type="text" placeholder="Email" class="form-control form-control animate__animated animate__backInLeft animate__slow" [(ngModel)]="user.email" />
+         
+        </div>
+        
+
+        <div class="form-outline mb-2">
+          <input type="password" placeholder="Password" class="form-control form-control animate__animated animate__backInDown animate__slow" [(ngModel)]="user.password" />
+         
+        </div>
+
+        <div class="pt-1 mb-2">
+        
+          <button type="button" routerLink="/signin" class="btn btn-rounded text-white animate__animated animate__infinite animate__pulse"  (click)="signIn()"> Sign In </button>
+        </div>
+
+        <a class="small text-white" href="#!">Forgot password?</a>
+        <p class=" pb-lg-2 text-white">Don't have an account? <a  
+            style="color: #031956;" routerLink="/login">Register here</a></p>
+        
+      </div>
+      </div>
+    </div>
+
+  </section>
+
+  
+  
+
+ 

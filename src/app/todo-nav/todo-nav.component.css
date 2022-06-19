@@ -1,0 +1,11 @@
+
+button{
+    background-color: white;
+    align-items: center;
+    padding-left: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 100px;
+    border: 1px solid #031956;
+    font-family: 'Quicksand', sans-serif;
+  }

@@ -1,0 +1,116 @@
+<app-todo-nav></app-todo-nav>
+<!-- <body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">BBBootstrap</span> </a>
+                <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a> <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> </div>
+            </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+        </nav>
+    </div>
+    < Main start-->
+    <!-- <div class="height-100 bg-light">
+        <h4>Main Components</h4>
+    </div>
+      
+    </body> -->
+    <!--Container Main end-->
+<div class="vh-100 py-3 bod" style="background-color: #031956;">
+    <div class="container animate__animated animate__backInDown">
+          <div class="col-lg-6 col--4 mx-auto mt-2 text-light shadow p-5 animate__animated animate__backInDown" style="background-color: #344FA1;  border-radius: 40px;">
+        <mat-tab-group mat-align-tabs="center"  >
+          <mat-tab label="Add Todo" class="text-dark">
+
+             <div class="mt-5 text-center align-items-center">
+               <!-- <p>Welcome : {{findUser.firstName}}</p> -->
+               <input type="text" placeholder="Todo Name" class="form-control text-white" [(ngModel)]="user.todo">
+               <input type="text" class="form-control mt-2 text-white" value="2:30" placeholder="To do description" [(ngModel)]="user.todoDescription">
+               <input type="time" type="time" class="form-control mt-2" value="2:30" placeholder="To do time" [(ngModel)]="user.todoTime">
+               <input type="date" class="form-control mt-2" value="2:30" placeholder="To do time" [(ngModel)]="user.todoDate">
+               <!-- <button class="btn btn-outline-dark w-100 mt-2" (click)="addTodo()">Add Todo</button> -->
+               <div class="pt-1 ml-4 mb-2">
+        
+                <button type="button" class="btn btn-rounded text-white animate__animated animate__infinite animate__pulse mt-3 ml-4" (click)="addTodo()">Add Todo</button>
+              </div>
+               <div class="table">
+                 <table class="table table-striped w-100 text-light text-center">
+                   <thead>
+                     <th>S/N</th>
+                     <th>To do</th>
+                     <th>View</th>
+                   </thead>
+                   <tr *ngFor="let u of currentTodo, index as i">
+                     <td>{{i+1}}</td>
+                     <td>{{u.todo}}</td>
+                     <td><button class="btn btn-success" [routerLink]="'user-todo/'+1" >view</button></td>
+                   </tr>
+                 </table>
+               </div>
+            </div>
+    
+          </mat-tab>
+          <mat-tab label="Check Todo">
+            <table class="table mb-0 text-light" >
+              <thead>
+                <tr class="">
+                  <th scope="col">S/N</th>
+                  <th scope="col" class="text-center">Task</th>
+                  <th scope="col" class="text-center">Time</th>
+                  <th scope="col" class="text-center">Desc</th>
+                  <th scope="col" class="text-center">Date</th>
+                  <th scope="col" class="text-center">Edit</th>
+                  <th scope="col" class="text-center">Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let u of currentTodo, index as i">
+                  <!-- <td>
+                    <span [class]="todo_index+1 <=2 ? 'text-danger':'text-success'"></span>
+                  </td> -->
+                  <td>
+                    <div>{{i+1}}</div>
+                  </td>
+                  <td>
+                    <div class="text-center"> {{u.todo}}</div>
+                  </td>
+                  <td>
+                    <div  class="text-center text-success">{{u.todoTime}}</div>
+                  </td>
+                  <td>
+                    <div class="text-center"> {{u.todoDescription}}</div>
+                  </td>
+                  <td>
+                    <div  class="text-center text-success">{{u.todoDate}}</div>
+                  </td>
+                 
+                  <td>
+                    <div  class="text-center text-primary"
+                    (click)="editTodo()">
+                    <span class="fa fa-pen"></span>
+                  </div>
+                  </td>
+                  <td>
+                    <div class="text-center text-danger" (click)="deleteTask(i)">
+                      <span class="fa fa-trash"></span> 
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          
+          
+          </mat-tab>
+        </mat-tab-group>
+        </div>
+        </div>
+      </div>
+        
+       
+    
+        
+      
+    

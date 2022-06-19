@@ -1,0 +1,85 @@
+.boy{
+    background-image: url('../../assets/images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  /* *{
+      overflow-y: none;
+  } */
+  @media (max-width:700px){
+    .boy{
+      background-image: url('../../assets/images/logo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+    }
+  }
+
+  .login-key {
+    height: 80px;
+    font-size: 50px;
+    line-height: 100px;
+    background: -webkit-linear-gradient(#5650F5, #5650F5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+
+input[type=text] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #EB05FF;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    color: #ECF0F5;
+}
+
+input[type=password] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #EB05FF;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    color: #ECF0F5;
+}
+::placeholder{
+  color: white;
+}
+
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid white;
+    outline: 0;
+    background-color: transparent;
+    color: #ECF0F5;
+}
+button{
+  background-color: #EB05FF;
+  align-items: center;
+  padding-left: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  width: 100px;
+  border: none;
+}
+
+
+
+
+

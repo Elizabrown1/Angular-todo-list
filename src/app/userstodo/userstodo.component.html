@@ -1,0 +1,65 @@
+<app-todo-nav></app-todo-nav>
+<div class="vh-100 bg-dark by py-5">
+    <div class="container">
+          <div class="col-lg-8 col--4 mx-auto mt-5 bg-light text-black shadow p-5" style="border-radius: 1rem;">
+        <mat-tab-group mat-align-tabs="center" >
+          <mat-tab label="Add Todo" class="text-dark">
+            <div class=""></div>
+            <h4 class=" text-center text-black  py-2 mt-2" style="color: #3395E9; font-weight: bolder;">Add Todo</h4>
+             <div>
+               <input type="text" placeholder="Todo Name" class="form-control" [(ngModel)]="user.todo">
+               <input type="text" class="form-control mt-2" value="2:30" placeholder="To do description" [(ngModel)]="user.todoDescription">
+               <input type="time" type="time" class="form-control mt-2" value="2:30" placeholder="To do time" [(ngModel)]="user.todoTime">
+               <input type="date" class="form-control mt-2" value="2:30" placeholder="To do time" [(ngModel)]="user.todoDate">
+               <button class="btn btn-outline-dark w-100 mt-2" (click)="addTodo()">Edit todo</button>
+               <div class="table">
+                <table class="table mb-0 text-dark" >
+                    <thead>
+                      <tr class="">
+                        <th scope="col">S/N</th>
+                        <th scope="col" class="text-center">Task</th>
+                        <th scope="col" class="text-center">Time</th>
+                        <th scope="col" class="text-center">Desc</th>
+                        <th scope="col" class="text-center">Date</th>
+                        <th scope="col" class="text-center">Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let u of currentTodo, index as i">
+                    
+                        <td>
+                          <div>{{i+1}}</div>
+                        </td>
+                        <td>
+                          <div class="text-center"> {{u.todo}}</div>
+                        </td>
+                        <td>
+                          <div  class="text-center text-success">{{u.todoTime}}</div>
+                        </td>
+                        <td>
+                          <div class="text-center"> {{u.todoDescription}}</div>
+                        </td>
+                        <td>
+                          <div  class="text-center text-success">{{u.todoDate}}</div>
+                        </td>
+                       
+                        <td>
+                          <div class="text-center text-danger" (click)="deleteTask(i)">
+                            <span class="fa fa-trash"></span> 
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+               </div>
+            </div>
+    
+          </mat-tab>
+         
+        </mat-tab-group>
+        </div>
+        </div>
+      </div>
+        
+       

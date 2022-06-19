@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg sticky-top border-bottom border-3" style="background-color:  #031956; border-color: #EB05FF !important;">
+ 
+    <div class="container">
+      <div class=" d-flex">
+          <a class="navbar-brand text-white" routerLink="/home" style="font-family: 'Quicksand', sans-serif; font-size: 30px; font-weight: bolder;"> 
+            doist</a>
+          </div>
+          <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+              aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarID">
+            <ul class="navbar-nav align-items-center animate__animated animate__backInRight">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" routerLink="/home" style="color: #EB05FF;;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" routerLink="/users" >Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" routerLink="/dashboard" >Dashbaard</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-light" routerLink="/todo">Todo</a>
+                  </li>
+                  </ul>
+                  
+                  <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link text-light  text-center animate__animated animate__infinite animate__pulse" style="border-radius: 50px;  width: 100px; background-color: #EB05FF;" type="button" routerLink="/signin">SignIn</a>
+
+                  </li>
+                  <li class="nav-item" style="left: 10px;position:relative">
+                    <a class="nav-link text-primary  text-center animate__animated animate__infinite animate__pulse" style="border-radius: 50px; border: 1px solid white; width: 100px;" type="button" routerLink="/login">Login</a>
+
+                </li>
+                  
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- <hr class="bolder border border-danger" style=" margin-top: 0px; margin-bottom: 0px !important;"> -->
