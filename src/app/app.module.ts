@@ -18,6 +18,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { TodoNavComponent } from './todo-nav/todo-nav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TestComponent } from './test/test.component';
 
 
 
@@ -35,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     TodoNavComponent,
     DashboardComponent,
+    TestComponent,
 
   ],
   imports: [

@@ -64,7 +64,7 @@ input[type=password] {
     color: #ECF0F5;
 }
 ::placeholder{
-  color: white;
+  color: #031956;;
 }
 
 .form-control:focus {
